@@ -1,21 +1,12 @@
-import React from 'react'
-import Head from './components/Head'
-import Landing from './components/Landing'
+import Sidenav from "./components/Sidenav";
 
-
-const App = () => {
+export default function App() {
   return (
-<div  className='main m-0 p-0  box-border  font-sans h-full w-full '>
-      
-    <Head/>
-    <Landing/>
+<>
+   <Sidenav/>
 
 
-    
-</div>
 
-
+</>
   )
 }
-
-export default App
