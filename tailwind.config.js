@@ -1,18 +1,19 @@
 /** @type {import('tailwindcss').Config} */
-
-module.exports = {
-  content: [
-    './src/**/*.{js,jsx,ts,tsx}', // Adjust this path according to your project structure
-  ],
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        'image1': "url('/path/to/image1.png')",
-        'image2': "url('/path/to/image2.png')",
-        'image3': "url('/path/to/image3.png')",
+      colors: {
+        blue: "#2997FF",
+        gray: {
+          DEFAULT: "#86868b",
+          100: "#94928d",
+          200: "#afafaf",
+          300: "#42424570",
+        },
+        zinc: "#101010",
       },
     },
   },
   plugins: [],
 };
-

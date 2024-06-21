@@ -1,12 +1,19 @@
-import Sidenav from "./components/Sidenav";
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Highlights from './components/Highlights'
+import Model  from './components/Model'
 
-export default function App() {
+const App = () => {
   return (
-<>
-   <Sidenav/>
+    <div>
+      <Navbar/>
+      <Hero/>
+      <Highlights/>
+      <Model/>
 
 
-
-</>
+    </div>
   )
 }
+
+export default App
