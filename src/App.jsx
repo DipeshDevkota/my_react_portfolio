@@ -1,18 +1,13 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Highlights from './components/Highlights'
-import Model  from './components/Model'
-
+import Navbar from "./components/Navbar"
+import Project from "./components/Project"
+import Contact from "./components/Contact"
 const App = () => {
   return (
-    <div>
-      <Navbar/>
-      <Hero/>
-      <Highlights/>
-      <Model/>
-
-
-    </div>
+    <>
+  <Navbar/>
+  <Project/>
+  <Contact/>
+  </>
   )
 }
 
