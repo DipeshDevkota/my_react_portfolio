@@ -1,8 +1,8 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import About from './About.jsx'
 // import ScrollTrigger from 'gsap/ScrollTrigger';
 import { motion } from 'framer-motion';
-import About from "../components/About"
 const Navbar = () => {
   // Create a GSAP timeline instance
   const tl = gsap.timeline();
@@ -18,6 +18,12 @@ const Navbar = () => {
       delay: 0.2,
 
     });
+    tl.from(".nav-1",{
+    y:-30,
+    duration:1,
+    delay:0.1,
+    opacity:0,
+    })
     tl.from("#about",{
       stagger:0.5,
     })
@@ -108,6 +114,8 @@ const Navbar = () => {
         </a>
       </div>
     </div>
+   
+    
     <About/>
     </>
   );

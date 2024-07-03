@@ -1,14 +1,24 @@
 import Navbar from "./components/Navbar"
 import Project from "./components/Project"
-import Contact from "./components/Contact"
+import New from "./components/New"
+// import Contact from "./components/Contact"
+
+// /import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 const App = () => {
   return (
     <>
+  
   <Navbar/>
   <Project/>
-  <Contact/>
+  <New/>
+  {/* <Contact/> */}
+ 
   </>
   )
 }
 
 export default App
+
+
+
+

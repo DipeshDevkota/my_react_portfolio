@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import {Tilt } from 'react-tilt'
 import Myself from './Myself';
+
 window.addEventListener("wheel", function (dets) {
     if (dets.deltaY > 0) {
         gsap.to(".marquee",
@@ -34,7 +35,7 @@ window.addEventListener("wheel", function (dets) {
 });
 
 
-const Navbar = () => {
+const About = () => {
   const skills = [
     {
         title: "Frontend",
@@ -65,7 +66,7 @@ const Navbar = () => {
             },
             {
                 name: "TAILWIND",
-                img: "https://imgs.search.brave.com/W9CbFyxwjuZCstu49xt6tccC5kk1TtWTumoZ_-X-XRU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/d29ybGR2ZWN0b3Js/b2dvLmNvbS9sb2dv/cy90YWlsd2luZC1j/c3MtMi5zdmc.svg"
+                img: "https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg"
             }
         ],
     },
@@ -107,7 +108,7 @@ const Navbar = () => {
 //   max: 10,       // Reduce the maximum tilt angle for less sensitivity
 // };
  return (
-  
+    <>
 
   <div>
     <Myself/>
@@ -150,6 +151,7 @@ const Navbar = () => {
       </div>
     </div>
   </div>
+ </>
 );
 };
-export default Navbar;
+export default About;
