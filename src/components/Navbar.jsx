@@ -91,7 +91,8 @@ const Navbar = () => {
           </p>
         </div>
         <div className="body-2 p-2">
-          <video src="/video2.mp4" className="h-96 lg:ml-44 mb-4 w-auto border-black rounded-md shadow-md  mr-36" autoPlay loop muted></video>
+          {/* <video src="/video2.mp4" className="h-96 lg:ml-44 mb-4 w-auto border-black rounded-md shadow-md  mr-36" autoPlay loop muted></video> */}
+          <img src="https://cdn.pixabay.com/photo/2023/12/22/10/01/ai-generated-8463497_1280.jpg" className='h-96 lg:ml-44 mb-4 w-auto border-black rounded-md shadow-md  mr-36'></img>
         </div>
       </div>
 
