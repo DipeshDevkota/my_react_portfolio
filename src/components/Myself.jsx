@@ -24,16 +24,15 @@ const Myself = () => {
   //     duration: 1,
   //     ease: "power2.out",
   //   });
-
-  // }, []);
-   // Ensure useEffect runs only once on component mount
+  // }, []); // Ensure useEffect runs only once on component mount
 
   return (
-    <div className="about bg-black flex justify-between items-center p-6">
-      <div className="aboutphoto ml-40">
+    <div className="about bg-black flex flex-col lg:flex-row justify-between items-center p-6">
+      <div className="aboutphoto mb-6 lg:mb-0 lg:ml-40">
         <img
-          src="https://images.unsplash.com/photo-1535378620166-273708d44e4c?q=80&w=1914&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          className="h-[40vh] w-[20vw] border-2 -rotate-12 hover:rotate-0 duration-150 ease-linear mb-4 border-cyan-600 rounded-xl bg-cover"
+          // src="https://images.unsplash.com/photo-1535378620166-273708d44e4c?q=80&w=1914&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://dipeshdevkota.github.io/portfolio/dipss.jpg"
+          className="h-[40vh] w-[80vw] sm:w-[40vw] md:w-[30vw] lg:w-[20vw] border-2 -rotate-12 hover:rotate-0 duration-150 ease-linear mb-4 border-cyan-600 rounded-xl bg-cover"
           alt="Profile"
         />
       </div>

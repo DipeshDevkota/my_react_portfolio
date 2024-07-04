@@ -48,7 +48,8 @@ const Project = () => {
 
   return (
     <div className="project h-screen w-full mt-[1h] bg-black border-t-2 border-slate-50 mb-36">
-      <h2 className="projtitle bg-customnone p-7 text-8xl text-white mb-10 ml-3">PROJECTS</h2>
+  <h2 className="projtitle bg-customnone p-7 text-4xl sm:text-6xl md:text-8xl text-white mb-10 ml-3">PROJECTS</h2>
+
       <div className="elem-container">
         {projects.map((project, index) => (
           <div
