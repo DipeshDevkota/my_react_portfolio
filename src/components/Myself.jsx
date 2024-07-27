@@ -1,37 +1,14 @@
-// import React, { useEffect } from 'react';
-// import { gsap } from 'gsap';
-// import ScrollTrigger from 'gsap/ScrollTrigger'; // Import ScrollTrigger from gsap
+import React from 'react';
 
 const Myself = () => {
-  // useEffect(() => {
-  //   // Register ScrollTrigger plugin
-  //   gsap.registerPlugin(ScrollTrigger);
-
-  //   // GSAP timeline for the animation
-  //   const tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: ".about",
-  //       start: "top 50%", // Start the animation when .about is 50% in view
-  //       end: "top -10%", // End the animation when .about is 10% above the top
-  //       scrub: true, // Enables smooth scrubbing effect
-  //     }
-  //   });
-
-  //   // Animation sequence
-  //   tl.from(".about", {
-  //     opacity: 0,
-  //     y: 50,
-  //     duration: 1,
-  //     ease: "power2.out",
-  //   });
-  // }, []); // Ensure useEffect runs only once on component mount
-
   return (
-    <div className="about bg-black flex flex-col lg:flex-row justify-between items-center p-6">
+    <div
+      
+      className="about bg-black flex flex-col lg:flex-row justify-between items-center p-6"
+    >
       <div className="aboutphoto mb-6 lg:mb-0 lg:ml-40">
         <img
-          // src="https://images.unsplash.com/photo-1535378620166-273708d44e4c?q=80&w=1914&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          src="https://dipeshdevkota.github.io/portfolio/dipss.jpg"
+          src="http://dipeshdevkota.com.np/gallery_gen/3f917bd2f95051b5afe97dd0bf071908_608x606_fit.jpg?ts=1718682507"
           className="h-[40vh] w-[80vw] sm:w-[40vw] md:w-[30vw] lg:w-[20vw] border-2 -rotate-12 hover:rotate-0 duration-150 ease-linear mb-4 border-cyan-600 rounded-xl bg-cover"
           alt="Profile"
         />

@@ -9,6 +9,20 @@ import Myself from './Myself';
 const About = () => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+       var tl= gsap.timeline();
+       tl.to(".title",{
+
+        x:-10,
+        scrollTrigger: {
+          trigger: '.about',
+          start:"top center",
+          // scrub:true,
+          duration:2.5,
+          ease: "power2.out",
+          // markers:true,
+
+       }})
+
       
         window.addEventListener("wheel", function (dets) {
           if (dets.deltaY > 0) {
